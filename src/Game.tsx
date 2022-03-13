@@ -21,7 +21,7 @@ function Game(props: GameProps) {
   const [guesses, setGuesses] = useState<string[]>([]);
   const [currentGuess, setCurrentGuess] = useState<string>("");
   const [wordLength] = useState(6);
-  const [target] = useState<string>("438241");
+  const [target] = useState<string>("856709");
   const [hint, setHint] = useState<string>(`Make your first guess!`);
   const tableRef = useRef<HTMLTableElement>(null);
   const startNextGame = () => {
@@ -102,15 +102,15 @@ function Game(props: GameProps) {
 
   const headerRow = Array(wordLength).fill(undefined)
     .map((_, i) => { return (
-      <td className="Row-letter letter-absent">{String.fromCharCode(i + 'A'.charCodeAt(0))}</td>
+      <td className={`Row-letter ${ i < 3 ? "header-lat" : "header-lon"}`}>{String.fromCharCode(i + 'A'.charCodeAt(0))}</td>
     )});
   return (
     <div className="Game" style={{ display: props.hidden ? "none" : "block" }}>
         Find the cache at
         <br/>
-        <b>N 33° 45.ABC</b>
+        <b>N 33° 50.ABC</b>
         <br/>
-        <b>W 117° 45.DEF</b>
+        <b>W 117° 44.DEF</b>
         <br/><br/>
       <table
         className="Game-rows"

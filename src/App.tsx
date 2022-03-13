@@ -6,7 +6,6 @@ import { useEffect } from "react";
 function App() {
   const dark = true;
   const colorBlind = false;
-  const difficulty = 0;
   const keyboard = "12345B-67890E";
   const enterLeft = false;
 

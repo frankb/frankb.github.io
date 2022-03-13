@@ -139,6 +139,18 @@ table.Game-rows > tbody {
   color: white !important;
 }
 
+.header-lat {
+  border: 2px solid rgb(0, 0, 0);
+  background-color: #a3c9fe;
+  color: white !important;
+}
+
+.header-lon {
+  border: 2px solid rgb(0, 0, 0);
+  background-color: #eeaacc;
+  color: white !important;
+}
+
 body.dark {
   background-color: #404040;
   color: #e0e0e0;
